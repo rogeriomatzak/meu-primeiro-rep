@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Meta Economica</h1>
+</head>
+<body>
+    Meta<input type="text" id="input_meta">
+   Dinheiro Guardado <input type="text" id="input_guardado">
+    <button onclick="Analisar()">Analisar Economia</button>
+    <div id="div_msg"></div>
+</body>
+</html>
+<script>
+function Analisar(){
+var meta=Number(input_meta.value);
+var guardado=Number(input_guardado.value)
+var diferenca=meta-guardado
+var metacomp= guardado-meta
+if(guardado >= meta){
+    div_msg.innerHTML=` Parabéns, meta alcançada!. Meta ultrapassada em ${metacomp} `
+}
+else{
+    div_msg.innerHTML=`Força! Ainda em busca da meta! Falta ${diferenca}`
+}
+
+
+}
+
+
+
+
+
+</script>

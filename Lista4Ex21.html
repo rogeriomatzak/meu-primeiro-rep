@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+   Quantidade Homem : <input type="text" id="input_qtdh"><br>
+    Qunatidade Mulher : <input type="text" id="input_qtdm"><br>
+    <button onclick="SOlicitar()">Ligar elevador</button><br>
+    <div id="div_msg"></div>
+
+</body>
+
+</html>
+<script>
+    function SOlicitar() {
+        var qtdm = Number(input_qtdm.value) * 70;
+        var qtdh = Number(input_qtdh.value) * 90;
+        var total = qtdm + qtdh;
+        var diferenca = total - 500;
+        if (total < 500) {
+            div_msg.innerHTML = `<p style="color: green;">  Elevador vai se mover, pois está com ${total} Kg</p>`
+        }
+        else {
+            div_msg.innerHTML = `<p style="color: red;" >Alguém precisa descer. Precisa perder ${diferenca} Kg para mover o elevador </p>`
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+</script>

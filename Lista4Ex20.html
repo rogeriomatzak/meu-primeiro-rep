@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
     <input type="text" id="input_temp">
     <button onclick="Solicitar()">Verificar Clima</button>
+    <div id="div_mensagem"></div>
+
 </body>
 </html>
 <script>
 function Solicitar(){
 var temp=(input_temp.value);
+if(temp >10){
+div_mensagem.innerHTML=`Inapropriada p/ conservar alimento`
+}
+else{
+div_mensagem.innerHTML=`Apropriada p/ conservar alimento `
 
-
-
+}
 
 }
 
