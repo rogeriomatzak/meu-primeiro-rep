@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <H1>Tom Clancy’s Rainbow Six Siege. </H1>
+</head>
+<body>
+   UserName: <input type="text" id="input_nome"><br>
+   Total de  eliminações <input type="text" id="input_eli"><br>
+   Total de mortes <input type="text" id="input_mor"><br>
+   <button onclick="calcular()">Gerar E/M</button>
+   <div id="div_msg"></div>
+<b style="color: green;"></b>
+</body>
+</html>
+<script>
+function calcular(){
+var nome =(input_nome.value);
+var eli =Number(input_eli.value);
+var mor =Number(input_mor.value);
+var EM = eli/mor
+
+if(EM <1){
+div_msg.innerHTML=`<b style="color: red;">  O ${nome} é um péssimo jogador, seu E/M é ${EM} </b>`
+
+}
+
+else{
+div_msg.innerHTML=`<b style="color: green;"> Parabéns, o ${nome} é um ótimo jogador, semelhante ao criador do programa. O seu E/M é ${EM}   </b>`
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+</script>
