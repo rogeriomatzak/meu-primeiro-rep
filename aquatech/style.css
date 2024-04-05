@@ -13,6 +13,7 @@ body {
     display: flex;
     width: 80%;
     margin: auto;
+    justify-content: space-around;
 }
 
 .titulo {
@@ -31,4 +32,55 @@ body {
 
 .header .container {
     justify-content: space-between;
+}
+
+/* BANNER */
+.banner {
+    padding: 40px 20px 30px 10px;
+    color: white;
+    height: 400px;
+    background-image: url(bg-jelly-fish-para_outras_pags.png);
+
+}
+
+/* CTL espaço */
+.banner .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner .container p {
+    font-size: 36px;
+    width: 25%;
+}
+
+.banner.container p span {
+font-weight: bold;
+
+}
+.social{
+    background-color: white;
+    padding: 40px 0;
+}
+.card{
+    width: 150px;
+    text-align: center;
+    
+}
+.card img{
+    width: 100px;
+    margin-top: 15px;
+}
+.card h4{
+    font-size: 24px;
+}
+.footer{
+    height: 100px;
+    background-color: #32c9cd;
+}
+.footer .container{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
